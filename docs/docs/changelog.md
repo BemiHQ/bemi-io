@@ -9,6 +9,20 @@ keywords: ['Bemi Changelog', 'Bemi New Features', 'Postgres Audit Trails', 'Chan
 
 # Changelog
 
+## 2025-07
+
+* [Bemi SQLAlchemy](https://github.com/BemiHQ/bemi-sqlalchemy)
+  * Update the generated migration to fix insufficient permission errors
+
+## 2025-06
+
+* Dashboard
+  * Add a Billing Portal link
+  * Check read permissions when showing tables for selective tracking
+* Platform
+  * Explicitly set `search_path` when creating PG functions
+  * Ignore large context payloads
+
 ## 2025-05
 
 * [Bemi Prisma](https://github.com/BemiHQ/bemi-prisma)

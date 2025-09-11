@@ -40,7 +40,7 @@ const config: Config = {
         docs: {
           routeBasePath: "/",
           sidebarPath: "./sidebars.ts",
-          editUrl: "https://github.com/BemiHQ/bemi/tree/main/docs/",
+          editUrl: "https://github.com/BemiHQ/bemi-io/tree/main/docs/",
         },
         blog: false,
         theme: {
@@ -66,7 +66,7 @@ const config: Config = {
       },
       items: [
         {
-          href: "https://github.com/BemiHQ/bemi",
+          href: "https://github.com/BemiHQ/bemi-io",
           label: "GitHub",
           position: "right",
         },
@@ -130,7 +130,7 @@ const config: Config = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/BemiHQ/bemi",
+              href: "https://github.com/BemiHQ/bemi-io",
             },
             {
               label: "Discord",

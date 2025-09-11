@@ -8,9 +8,9 @@
     ·
     <a href="https://docs.bemi.io">Docs</a>
     ·
-    <a href="https://github.com/BemiHQ/bemi/issues/new">Report Bug</a>
+    <a href="https://github.com/BemiHQ/bemi-io/issues/new">Report Bug</a>
     ·
-    <a href="https://github.com/BemiHQ/bemi/issues/new">Request Feature</a>
+    <a href="https://github.com/BemiHQ/bemi-io/issues/new">Request Feature</a>
     ·
     <a href="https://discord.gg/mXeZ6w2tGf">Discord</a>
     ·

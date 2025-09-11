@@ -9,7 +9,7 @@ keywords: ['Open source', 'Database Tracking', 'Postgres Audit Trails', 'Change 
 
 # Self-Hosting
 
-<a class="github-button" href="https://github.com/BemiHQ/bemi" data-size="large" data-show-count="true" aria-label="Star BemiHQ/bemi on GitHub">BemiHQ/bemi</a>
+<a class="github-button" href="https://github.com/BemiHQ/bemi-io" data-size="large" data-show-count="true" aria-label="Star BemiHQ/bemi on GitHub">BemiHQ/bemi</a>
 <br />
 <br />
 
