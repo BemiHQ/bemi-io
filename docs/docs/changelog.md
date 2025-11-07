@@ -9,6 +9,11 @@ keywords: ['Bemi Changelog', 'Bemi New Features', 'Postgres Audit Trails', 'Chan
 
 # Changelog
 
+## 2025-11
+
+* [Bemi Drizzle](https://github.com/BemiHQ/bemi-io-drizzle)
+  * Create a new Drizzle package to allow passing application context with data changes
+
 ## 2025-07
 
 * [Bemi SQLAlchemy](https://github.com/BemiHQ/bemi-sqlalchemy)
