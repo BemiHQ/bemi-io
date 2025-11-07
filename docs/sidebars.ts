@@ -48,6 +48,7 @@ const sidebars: SidebarsConfig = {
           collapsed: false,
           items: [
             'orms/prisma',
+            'orms/drizzle',
             'orms/typeorm',
             'orms/supabase-js',
             'orms/mikro-orm',
