@@ -145,6 +145,15 @@
           "primary": false,
           "nullable": false,
           "mappedType": "bigint"
+        },
+        "hash": {
+          "name": "hash",
+          "type": "varchar(255)",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": true,
+          "mappedType": "string"
         }
       },
       "name": "changes",

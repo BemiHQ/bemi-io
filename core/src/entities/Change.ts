@@ -57,6 +57,9 @@ export class Change extends BaseEntity {
   @Property({ type: 'bigint' })
   position: number
 
+  @Property({ type: 'string', nullable: true })
+  hash: string | null
+
   constructor({
     primaryKey,
     before,
@@ -70,6 +73,7 @@ export class Change extends BaseEntity {
     queuedAt,
     transactionId,
     position,
+    hash = null,
   }: {
     primaryKey?: string
     before: object
@@ -83,6 +87,7 @@ export class Change extends BaseEntity {
     queuedAt: Date
     transactionId: number
     position: number
+    hash?: string | null
   }) {
     super()
     this.primaryKey = primaryKey
@@ -97,5 +102,6 @@ export class Change extends BaseEntity {
     this.queuedAt = queuedAt
     this.transactionId = transactionId
     this.position = position
+    this.hash = hash
   }
 }

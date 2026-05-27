@@ -6,6 +6,7 @@ import { Change } from './entities/Change'
 import { FetchedRecord } from './fetched-record'
 import { FetchedRecordBuffer } from './fetched-record-buffer'
 import { stitchFetchedRecords } from './stitching'
+import { createHash } from 'crypto'
 
 const INSERT_INTERVAL_MS = 1000 // 1 second to avoid overwhelming the database
 const FETCH_EXPIRES_MS = 30_000 // 30 seconds, default
@@ -28,7 +29,10 @@ const persistFetchedRecords = async ({
   const batches = chunk(fetchedRecords, insertBatchSize)
 
   for (const fetchedRecs of batches) {
-    const changesAttributes = fetchedRecs.map(({ changeAttributes }) => changeAttributes)
+    const changesAttributes = fetchedRecs.map(({ changeAttributes }) => ({
+      ...changeAttributes,
+      hash: createHash('sha256').update(JSON.stringify(changeAttributes)).digest('hex'),
+    }))
     const queryBuilder = orm.em.createQueryBuilder(Change).insert(changesAttributes).onConflict().ignore()
     await queryBuilder.execute()
   }
